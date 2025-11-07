@@ -1,0 +1,16 @@
+product_id,name,price,description
+1,Процессор Intel Core i5-12400F,12500.00,Процессор Intel Core i5-12400F, 6 ядер, 12 потоков, 2.5 ГГц
+2,Материнская плата ASUS PRIME B660M-K,8500.00,Материнская плата ASUS PRIME B660M-K, Socket LGA1700, DDR4
+3,Оперативная память Kingston FURY Beast 16GB DDR4,4500.00,Оперативная память Kingston FURY Beast 16GB DDR4 3200MHz
+4,Видеокарта NVIDIA GeForce RTX 3060 12GB,35000.00,Видеокарта NVIDIA GeForce RTX 3060 12GB GDDR6
+5,SSD накопитель Samsung 980 PRO 1TB,8500.00,SSD накопитель Samsung 980 PRO 1TB NVMe M.2
+6,Блок питания Cooler Master MWE 650W,5500.00,Блок питания Cooler Master MWE 650W 80+ Bronze
+7,Корпус Deepcool MATREXX 55,3500.00,Корпус Deepcool MATREXX 55 Midi-Tower, черный
+8,Кулер для процессора Deepcool GAMMAXX 400,2500.00,Кулер для процессора Deepcool GAMMAXX 400, башенный
+9,Жесткий диск Seagate BarraCuda 2TB,4500.00,Жесткий диск Seagate BarraCuda 2TB 7200RPM SATA III
+10,Wi-Fi адаптер TP-Link Archer T4E,2000.00,Wi-Fi адаптер TP-Link Archer T4E PCI-E, AC1200
+11,Звуковая карта Creative Sound Blaster Z,5500.00,Звуковая карта Creative Sound Blaster Z PCI-E
+12,Оптический привод ASUS DRW-24D5MT,1500.00,Оптический привод ASUS DRW-24D5MT DVD-RW
+13,Кабель SATA 3.0,300.00,Кабель SATA 3.0, длина 50 см
+14,Термопаста Arctic MX-4,500.00,Термопаста Arctic MX-4, 4 грамма
+15,Вентилятор корпусный 120mm,800.00,Вентилятор корпусный 120mm, 3-pin, черный

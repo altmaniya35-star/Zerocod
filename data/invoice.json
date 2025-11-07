@@ -1,0 +1,69 @@
+[
+  {
+    "invoice_id": 1,
+    "customer_id": 1,
+    "date": "2024-01-15",
+    "items": [
+      {
+        "product_id": 1,
+        "quantity": 2
+      },
+      {
+        "product_id": 2,
+        "quantity": 2
+      },
+      {
+        "product_id": 3,
+        "quantity": 4
+      },
+      {
+        "product_id": 4,
+        "quantity": 2
+      },
+      {
+        "product_id": 5,
+        "quantity": 2
+      },
+      {
+        "product_id": 6,
+        "quantity": 2
+      },
+      {
+        "product_id": 7,
+        "quantity": 1
+      },
+      {
+        "product_id": 8,
+        "quantity": 2
+      },
+      {
+        "product_id": 9,
+        "quantity": 1
+      },
+      {
+        "product_id": 10,
+        "quantity": 2
+      },
+      {
+        "product_id": 11,
+        "quantity": 1
+      },
+      {
+        "product_id": 12,
+        "quantity": 1
+      },
+      {
+        "product_id": 13,
+        "quantity": 5
+      },
+      {
+        "product_id": 14,
+        "quantity": 3
+      },
+      {
+        "product_id": 15,
+        "quantity": 4
+      }
+    ]
+  }
+]

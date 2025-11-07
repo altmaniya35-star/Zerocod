@@ -1,0 +1,92 @@
+[
+  {
+    "product_id": 1,
+    "name": "Процессор Intel Core i5-12400F",
+    "price": 12500.00,
+    "description": "Процессор Intel Core i5-12400F, 6 ядер, 12 потоков, 2.5 ГГц"
+  },
+  {
+    "product_id": 2,
+    "name": "Материнская плата ASUS PRIME B660M-K",
+    "price": 8500.00,
+    "description": "Материнская плата ASUS PRIME B660M-K, Socket LGA1700, DDR4"
+  },
+  {
+    "product_id": 3,
+    "name": "Оперативная память Kingston FURY Beast 16GB DDR4",
+    "price": 4500.00,
+    "description": "Оперативная память Kingston FURY Beast 16GB DDR4 3200MHz"
+  },
+  {
+    "product_id": 4,
+    "name": "Видеокарта NVIDIA GeForce RTX 3060 12GB",
+    "price": 35000.00,
+    "description": "Видеокарта NVIDIA GeForce RTX 3060 12GB GDDR6"
+  },
+  {
+    "product_id": 5,
+    "name": "SSD накопитель Samsung 980 PRO 1TB",
+    "price": 8500.00,
+    "description": "SSD накопитель Samsung 980 PRO 1TB NVMe M.2"
+  },
+  {
+    "product_id": 6,
+    "name": "Блок питания Cooler Master MWE 650W",
+    "price": 5500.00,
+    "description": "Блок питания Cooler Master MWE 650W 80+ Bronze"
+  },
+  {
+    "product_id": 7,
+    "name": "Корпус Deepcool MATREXX 55",
+    "price": 3500.00,
+    "description": "Корпус Deepcool MATREXX 55 Midi-Tower, черный"
+  },
+  {
+    "product_id": 8,
+    "name": "Кулер для процессора Deepcool GAMMAXX 400",
+    "price": 2500.00,
+    "description": "Кулер для процессора Deepcool GAMMAXX 400, башенный"
+  },
+  {
+    "product_id": 9,
+    "name": "Жесткий диск Seagate BarraCuda 2TB",
+    "price": 4500.00,
+    "description": "Жесткий диск Seagate BarraCuda 2TB 7200RPM SATA III"
+  },
+  {
+    "product_id": 10,
+    "name": "Wi-Fi адаптер TP-Link Archer T4E",
+    "price": 2000.00,
+    "description": "Wi-Fi адаптер TP-Link Archer T4E PCI-E, AC1200"
+  },
+  {
+    "product_id": 11,
+    "name": "Звуковая карта Creative Sound Blaster Z",
+    "price": 5500.00,
+    "description": "Звуковая карта Creative Sound Blaster Z PCI-E"
+  },
+  {
+    "product_id": 12,
+    "name": "Оптический привод ASUS DRW-24D5MT",
+    "price": 1500.00,
+    "description": "Оптический привод ASUS DRW-24D5MT DVD-RW"
+  },
+  {
+    "product_id": 13,
+    "name": "Кабель SATA 3.0",
+    "price": 300.00,
+    "description": "Кабель SATA 3.0, длина 50 см"
+  },
+  {
+    "product_id": 14,
+    "name": "Термопаста Arctic MX-4",
+    "price": 500.00,
+    "description": "Термопаста Arctic MX-4, 4 грамма"
+  },
+  {
+    "product_id": 15,
+    "name": "Вентилятор корпусный 120mm",
+    "price": 800.00,
+    "description": "Вентилятор корпусный 120mm, 3-pin, черный"
+  }
+]

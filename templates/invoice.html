@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счёт №{{invoice_id}}</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm 2cm 3cm 2cm;
+        }
+        
+        @page {
+            @top-center {
+                content: "Счёт №{{invoice_id}}";
+                font-size: 10pt;
+                margin-top: 1cm;
+            }
+            @bottom-center {
+                content: "Страница " counter(page) " из " counter(pages);
+                font-size: 10pt;
+                margin-bottom: 1cm;
+            }
+        }
+        
+        body {
+            font-family: 'DejaVu Sans', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            margin-bottom: 25px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 22pt;
+            color: #000;
+        }
+        
+        .invoice-info {
+            display: table;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .invoice-info-row {
+            display: table-row;
+        }
+        
+        .invoice-info-cell {
+            display: table-cell;
+            padding: 3px 10px 3px 0;
+            vertical-align: top;
+        }
+        
+        .invoice-info-label {
+            font-weight: bold;
+            width: 120px;
+        }
+        
+        .customer-info {
+            background-color: #f5f5f5;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .customer-info h2 {
+            margin: 0 0 8px 0;
+            font-size: 13pt;
+            color: #000;
+        }
+        
+        .customer-details {
+            margin: 0;
+        }
+        
+        .customer-details p {
+            margin: 4px 0;
+            font-size: 10pt;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            page-break-inside: auto;
+        }
+        
+        thead {
+            background-color: #333;
+            color: #fff;
+            display: table-header-group;
+        }
+        
+        thead th {
+            padding: 8px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #000;
+            font-size: 10pt;
+        }
+        
+        tbody {
+            display: table-row-group;
+        }
+        
+        tbody td {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            font-size: 10pt;
+        }
+        
+        tbody tr {
+            page-break-inside: avoid;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .total-section {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #333;
+            page-break-inside: avoid;
+        }
+        
+        .total-row {
+            display: table;
+            width: 100%;
+            margin: 5px 0;
+        }
+        
+        .total-label {
+            display: table-cell;
+            text-align: right;
+            padding-right: 20px;
+            font-weight: bold;
+            width: 70%;
+            font-size: 12pt;
+        }
+        
+        .total-value {
+            display: table-cell;
+            text-align: right;
+            font-weight: bold;
+            font-size: 13pt;
+        }
+        
+        .grand-total {
+            font-size: 15pt;
+            color: #000;
+            margin-top: 8px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .table-container {
+            margin-bottom: 20px;
+        }
+        
+        .header-repeat {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .header-repeat h2 {
+            margin: 0 0 10px 0;
+            font-size: 18pt;
+            color: #000;
+        }
+        
+        .header-repeat-info {
+            display: table;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .header-repeat-info-row {
+            display: table-row;
+        }
+        
+        .header-repeat-info-cell {
+            display: table-cell;
+            padding: 3px 10px 3px 0;
+            vertical-align: top;
+            font-size: 10pt;
+        }
+        
+        .header-repeat-info-label {
+            font-weight: bold;
+            width: 120px;
+        }
+        
+        .header-repeat-customer {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .header-repeat-customer h3 {
+            margin: 0 0 6px 0;
+            font-size: 11pt;
+            color: #000;
+        }
+        
+        .header-repeat-customer-details {
+            margin: 0;
+        }
+        
+        .header-repeat-customer-details p {
+            margin: 3px 0;
+            font-size: 9pt;
+        }
+    </style>
+</head>
+<body>
+    <!-- Основной заголовок (только на первой странице) -->
+    <div class="header">
+        <h1>Счёт №{{invoice_id}}</h1>
+        <div class="invoice-info">
+            <div class="invoice-info-row">
+                <div class="invoice-info-cell invoice-info-label">Дата:</div>
+                <div class="invoice-info-cell">{{invoice_date}}</div>
+            </div>
+        </div>
+        
+        <div class="customer-info">
+            <h2>Покупатель:</h2>
+            <div class="customer-details">
+                <p><strong>{{customer_name}}</strong></p>
+                <p>Email: {{customer_email}}</p>
+                <p>Телефон: {{customer_phone}}</p>
+                <p>Адрес: {{customer_address}}</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Таблицы товаров (разбиты по 10 записей на страницу) -->
+    {{tables}}
+    
+    <!-- Итоговая сумма -->
+    <div class="total-section">
+        <div class="total-row">
+            <div class="total-label">Итого:</div>
+            <div class="total-value grand-total">{{total_amount}} ₽</div>
+        </div>
+    </div>
+</body>
+</html>
